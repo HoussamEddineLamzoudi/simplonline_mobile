@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: simplonColor,
       ),
       home: const MyHomePage(title: 'Simplonline'),
     );
@@ -66,6 +67,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  int currentPage = 0;
 
   void _incrementCounter() {
     setState(() {
@@ -127,6 +129,24 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+      //Navigation Bar
+      bottomNavigationBar: NavigationBar(
+        destinations: const [
+          NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+          NavigationDestination(
+              icon: Icon(Icons.assignment_outlined), label: 'Briefs'),
+          NavigationDestination(
+              icon: Icon(Icons.install_desktop), label: 'Rendus'),
+          NavigationDestination(icon: Icon(Icons.person), label: 'Profile')
+        ],
+        onDestinationSelected: (int index) {
+          //one of aplication of StatefulWidget we use it to refresh the scren
+          setState(() {
+            currentPage = index;
+          });
+        },
+        selectedIndex: currentPage,
+      ),
     );
   }
 }
