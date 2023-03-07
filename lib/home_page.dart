@@ -20,11 +20,12 @@ class HomePage extends StatelessWidget {
         ],
       ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
           color: Colors.white,
           // margin: const EdgeInsets.all(15),
-          margin: const EdgeInsets.fromLTRB(0, 180, 0, 20),
+          // margin: const EdgeInsets.fromLTRB(0, 180, 0, 20),
           width: double.infinity,
           child: const Text(
             'Welcome To',
