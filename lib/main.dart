@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:simplonline_mobile/brief.dart';
 import 'package:simplonline_mobile/briefs.dart';
 import 'package:simplonline_mobile/home_page.dart';
 import 'package:simplonline_mobile/profile.dart';
 import 'package:simplonline_mobile/rendu_page.dart';
-import 'package:simplonline_mobile/test.dart';
 
 void main() {
   runApp(const MyApp());
