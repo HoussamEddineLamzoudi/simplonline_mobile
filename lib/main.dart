@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simplonline_mobile/briefs.dart';
 import 'package:simplonline_mobile/home_page.dart';
+import 'package:simplonline_mobile/login.dart';
 import 'package:simplonline_mobile/profile.dart';
 import 'package:simplonline_mobile/rendu_page.dart';
 
@@ -24,6 +25,7 @@ MaterialColor simplonColor = const MaterialColor(
     900: Color.fromRGBO(206, 0, 51, 1.0),
   },
 );
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -111,6 +113,13 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           debugPrint('floatingActionButton');
+          Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (BuildContext context) {
+                              return const Login();
+                            },
+                          ),
+                        );
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),

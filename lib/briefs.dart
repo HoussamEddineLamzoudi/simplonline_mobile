@@ -23,249 +23,250 @@ class Briefs extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Center(
-            child: Column(
-              
-              children: [
-                //brief
-                GestureDetector(
-                  onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (BuildContext context) {
-                              return const Brief();
-                            },
-                          ),
-                        );
-                  },
-                  child: Container(
-                      width: MediaQuery.of(context).size.width - 90,
-                      margin: const EdgeInsets.fromLTRB(0, 15, 0, 15),
-                      child: Center(
-                        child: Column(
-                          children: [
-                            Image.asset('images/brief.jpeg'),
-                            Container(
-                              color: Colors.white,
-                              width: double.infinity,
-                              padding: const EdgeInsets.all(15),
-                              child: Column(children: const [
-                                Text(
-                                'CVThèque',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              // ignore: unnecessary_const
-                              const Text(
-                                'brief mini description',
-                                textAlign: TextAlign.left,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.normal,
-                                ),
-                              ),
-                              ],)
+              child: Column(
+                
+                children: [
+                  //brief
+                  GestureDetector(
+                    onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (BuildContext context) {
+                                return const Brief();
+                              },
                             ),
-                          ],
-                        )
-                      )),
-                ),
-                  
-                  
-                //brief
-                GestureDetector(
-                  onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (BuildContext context) {
-                              return const Brief();
-                            },
-                          ),
-                        );
-                  },
-                  child: Container(
-                      width: MediaQuery.of(context).size.width - 90,
-                      margin: const EdgeInsets.only(bottom: 15),
-                      child: Center(
-                        child: Column(
-                          children: [
-                            Image.asset('images/brief.jpeg'),
-                            Container(
-                              color: Colors.white,
-                              width: double.infinity,
-                              padding: const EdgeInsets.all(15),
-                              child: Column(children: const [
-                                Text(
-                                'CVThèque',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
+                          );
+                    },
+                    child: Container(
+                        width: MediaQuery.of(context).size.width - 90,
+                        margin: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                        child: Center(
+                          child: Column(
+                            children: [
+                              Image.asset('images/brief.jpeg'),
+                              Container(
+                                color: Colors.white,
+                                width: double.infinity,
+                                padding: const EdgeInsets.all(15),
+                                child: Column(children: const [
+                                  Text(
+                                  'CVThèque',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
-                              // ignore: unnecessary_const
-                              const Text(
-                                'brief mini description',
-                                textAlign: TextAlign.left,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.normal,
+                                // ignore: unnecessary_const
+                                const Text(
+                                  'brief mini description',
+                                  textAlign: TextAlign.left,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                                 ),
+                                ],)
                               ),
-                              ],)
-                            ),
-                          ],
-                        )
-                      )),
-                ),
-                  
-                  
-                //brief
-                GestureDetector(
-                  onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (BuildContext context) {
-                              return const Brief();
-                            },
-                          ),
-                        );
-                  },
-                  child: Container(
-                      width: MediaQuery.of(context).size.width - 90,
-                      margin: const EdgeInsets.only(bottom: 15),
-                      child: Center(
-                        child: Column(
-                          children: [
-                            Image.asset('images/brief.jpeg'),
-                            Container(
-                              color: Colors.white,
-                              width: double.infinity,
-                              padding: const EdgeInsets.all(15),
-                              child: Column(children: const [
-                                Text(
-                                'CVThèque',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              // ignore: unnecessary_const
-                              const Text(
-                                'brief mini description',
-                                textAlign: TextAlign.left,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.normal,
-                                ),
-                              ),
-                              ],)
-                            ),
-                          ],
-                        )
-                      )),
-                ),
-                  
-                  
-                //brief
-                GestureDetector(
-                  onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (BuildContext context) {
-                              return const Brief();
-                            },
-                          ),
-                        );
-                  },
-                  child: Container(
-                      width: MediaQuery.of(context).size.width - 90,
-                      margin: const EdgeInsets.only(bottom: 15),
-                      child: Center(
-                        child: Column(
-                          children: [
-                            Image.asset('images/brief.jpeg'),
-                            Container(
-                              color: Colors.white,
-                              width: double.infinity,
-                              padding: const EdgeInsets.all(15),
-                              child: Column(children: const [
-                                Text(
-                                'CVThèque',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              // ignore: unnecessary_const
-                              const Text(
-                                'brief mini description',
-                                textAlign: TextAlign.left,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.normal,
-                                ),
-                              ),
-                              ],)
-                            ),
-                          ],
-                        )
-                      )),
-                ),
-                  
+                            ],
+                          )
+                        )),
+                  ),
                     
-                //brief
-                GestureDetector(
-                  onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (BuildContext context) {
-                              return const Brief();
-                            },
-                          ),
-                        );
-                  },
-                  child: Container(
-                      width: MediaQuery.of(context).size.width - 90,
-                      margin: const EdgeInsets.only(bottom: 15),
-                      child: Center(
-                        child: Column(
-                          children: [
-                            Image.asset('images/brief.jpeg'),
-                            Container(
-                              color: Colors.white,
-                              width: double.infinity,
-                              padding: const EdgeInsets.all(15),
-                              child: Column(children: const [
-                                Text(
-                                'CVThèque',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              // ignore: unnecessary_const
-                              const Text(
-                                'brief mini description',
-                                textAlign: TextAlign.left,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.normal,
-                                ),
-                              ),
-                              ],)
+                    
+                  //brief
+                  GestureDetector(
+                    onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (BuildContext context) {
+                                return const Brief();
+                              },
                             ),
-                          ],
-                        )
-                      )),
-                )
-              ],
-            ),
+                          );
+                    },
+                    child: Container(
+                        width: MediaQuery.of(context).size.width - 90,
+                        margin: const EdgeInsets.only(bottom: 15),
+                        child: Center(
+                          child: Column(
+                            children: [
+                              Image.asset('images/brief.jpeg'),
+                              Container(
+                                color: Colors.white,
+                                width: double.infinity,
+                                padding: const EdgeInsets.all(15),
+                                child: Column(children: const [
+                                  Text(
+                                  'CVThèque',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                // ignore: unnecessary_const
+                                const Text(
+                                  'brief mini description',
+                                  textAlign: TextAlign.left,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                                ],)
+                              ),
+                            ],
+                          )
+                        )),
+                  ),
+                    
+                    
+                  //brief
+                  GestureDetector(
+                    onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (BuildContext context) {
+                                return const Brief();
+                              },
+                            ),
+                          );
+                    },
+                    child: Container(
+                        width: MediaQuery.of(context).size.width - 90,
+                        margin: const EdgeInsets.only(bottom: 15),
+                        child: Center(
+                          child: Column(
+                            children: [
+                              Image.asset('images/brief.jpeg'),
+                              Container(
+                                color: Colors.white,
+                                width: double.infinity,
+                                padding: const EdgeInsets.all(15),
+                                child: Column(children: const [
+                                  Text(
+                                  'CVThèque',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                // ignore: unnecessary_const
+                                const Text(
+                                  'brief mini description',
+                                  textAlign: TextAlign.left,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                                ],)
+                              ),
+                            ],
+                          )
+                        )),
+                  ),
+                    
+                    
+                  //brief
+                  GestureDetector(
+                    onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (BuildContext context) {
+                                return const Brief();
+                              },
+                            ),
+                          );
+                    },
+                    child: Container(
+                        width: MediaQuery.of(context).size.width - 90,
+                        margin: const EdgeInsets.only(bottom: 15),
+                        child: Center(
+                          child: Column(
+                            children: [
+                              Image.asset('images/brief.jpeg'),
+                              Container(
+                                color: Colors.white,
+                                width: double.infinity,
+                                padding: const EdgeInsets.all(15),
+                                child: Column(children: const [
+                                  Text(
+                                  'CVThèque',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                // ignore: unnecessary_const
+                                const Text(
+                                  'brief mini description',
+                                  textAlign: TextAlign.left,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                                ],)
+                              ),
+                            ],
+                          )
+                        )),
+                  ),
+                    
+                      
+                  //brief
+                  GestureDetector(
+                    onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (BuildContext context) {
+                                return const Brief();
+                              },
+                            ),
+                          );
+                    },
+                    child: Container(
+                        width: MediaQuery.of(context).size.width - 90,
+                        margin: const EdgeInsets.only(bottom: 15),
+                        child: Center(
+                          child: Column(
+                            children: [
+                              Image.asset('images/brief.jpeg'),
+                              Container(
+                                color: Colors.white,
+                                width: double.infinity,
+                                padding: const EdgeInsets.all(15),
+                                child: Column(children: const [
+                                  Text(
+                                  'CVThèque',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                // ignore: unnecessary_const
+                                const Text(
+                                  'brief mini description',
+                                  textAlign: TextAlign.left,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                                ],)
+                              ),
+                            ],
+                          )
+                        )),
+                  )
+                ],
+              ),
+            // ),
           ),
         ));
   }
